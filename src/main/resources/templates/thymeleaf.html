@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=My Work">
+	<link th:href="@{../style/style.css}" rel="stylesheet">
+</head>
+
+<body>
+<!--ヘッダー-->
+<div th:replace="fragment :: header"></div>
+
+<!--メイン-->
+<main>
+	<div class="form-container">
+		<from th:object="${user}" action="#" method="post">
+			<div class="form-contents">
+				<label for="name">氏名</label>
+				<input type="text" th:field="*{name}" />
+			</div>
+			<div class="form-contents">
+				<label for="email">メールアドレス</label>
+				<input type="email" th:field="*{email}" />
+			</div>
+			<div class="form-contents">
+				<label for="tel">電話番号</label>
+				<input type="text" th:field="*{tel}" />
+			</div>
+			<nav>
+				<p>お問い合わせ内容</p>
+				<form class="form-container2">
+				<div th:each="option : ${radioOptions}">
+					       <label th:for="option_">
+					           <input type="radio" name="option" th:value="${option}" th:id="option_" /> 
+					           <span th:text="${option}"></span>
+					       </label><br/>
+					   </div>
+				</form>
+			</nav>
+		</from>
+	</div>
+</main>
+
+<!--フッター-->
+<div th:replace="fragment :: footer"></div>
+</body>
