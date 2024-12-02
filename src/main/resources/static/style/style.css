@@ -93,10 +93,6 @@ hr {
     padding:0;
 }
 
-input, select {
-    vertical-align:middle;
-}
-
 /*ここから*/
 li {
     list-style: none;
@@ -168,10 +164,12 @@ footer p {
     margin: 0 aoto;
 }
 
+
+
 .form-contents {
     display: flex;
 	align-items: center;
-	justify-content: end;
+	justify-content: center;
 	padding: 20px 0;
 }
 

@@ -13,7 +13,7 @@
 <!--メイン-->
 <main>
 	<div class="form-container">
-		<from th:object="${user}" action="#" method="post">
+		<from th:object="${user}" action="#" method="post" class="form">
 			<div class="form-contents">
 				<label for="name">氏名</label>
 				<input type="text" th:field="*{name}" />

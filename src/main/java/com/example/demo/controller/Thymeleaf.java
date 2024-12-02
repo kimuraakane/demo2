@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+
+
 @Controller
 public class Thymeleaf {
 
@@ -24,6 +26,7 @@ public class Thymeleaf {
 		model.addAttribute("radioOptions", radioOptions);
 		
 		return "Thymeleaf";
+
 	}
 
 	
