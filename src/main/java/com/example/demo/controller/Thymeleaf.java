@@ -24,8 +24,13 @@ public class Thymeleaf {
 		//ラジオボタン
 		String[] radioOptions = {"⚪︎⚪︎⚪︎の問い合わせ", "×××の問い合せ", "△△△の問い合せ"};
 		model.addAttribute("radioOptions", radioOptions);
+
+		model.addAttribute("aboutTitle","ABOUT");
+		model.addAttribute("topTitle","TOP");
+		model.addAttribute("comtactTitle","COMTACT");
 		
 		return "Thymeleaf";
+	
 
 	}
 

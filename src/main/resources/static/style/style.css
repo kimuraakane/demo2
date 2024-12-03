@@ -169,12 +169,10 @@ footer p {
 .form-contents {
     display: flex;
 	align-items: center;
-	justify-content: center;
 	padding: 20px 0;
 }
 
 .form-contents label {
-	text-align: light;
 	padding-right: 20px;
 }
 
@@ -207,6 +205,10 @@ form {
 
 .form-container2 div {
     display: inline-block;
+}
+
+.form-title {
+    text-align: right;
 }
 
 
