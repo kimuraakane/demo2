@@ -169,6 +169,7 @@ footer p {
 .form-contents {
     display: flex;
 	align-items: center;
+    justify-content: center;
 	padding: 20px 0;
 }
 
@@ -195,7 +196,7 @@ nav p {
 	padding-right: 20px;
 }
 
-form {
+.form {
     display: flex;
     justify-content: center;
     align-items: center;

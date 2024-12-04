@@ -25,13 +25,23 @@ public class Thymeleaf {
 		String[] radioOptions = {"⚪︎⚪︎⚪︎の問い合わせ", "×××の問い合せ", "△△△の問い合せ"};
 		model.addAttribute("radioOptions", radioOptions);
 
-		model.addAttribute("aboutTitle","ABOUT");
+	
 		model.addAttribute("topTitle","TOP");
 		model.addAttribute("comtactTitle","COMTACT");
 		
 		return "Thymeleaf";
-	
+	}
 
+	public String aboutPage(){
+		return "Thymeleaf";
+	}
+
+	public String comtactPage(){
+		return "Thymeleaf";
+	}
+
+	public String topPage(){
+		return "Thymeleaf";
 	}
 
 	
